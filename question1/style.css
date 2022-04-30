@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Jost', sans-serif;
+}
+
+.container {
+  max-width: 100rem;
+  height: auto;
+  margin: 2rem auto;
+  padding: 3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.103);
+  background-color: #fff;
+}
+.form-group {
+  padding-left: 8rem;
+}
+.form-section {
+  border-right: 1px solid #8f8c8c;
+  padding-right: 12rem;
+}
+
+.form-title {
+  margin-bottom: 3rem;
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+.easy {
+  display: block;
+}
+
+.form-controls {
+  padding: 1rem 2rem;
+  border: none;
+  border-bottom: 1px solid #000;
+  margin-bottom: 2rem;
+  padding-left: 0;
+  outline: none;
+}
+
+.first-name {
+  text-align: start;
+  margin-right: 2rem;
+}
+
+.email {
+  width: 100%;
+}
+
+.text-area {
+  width: 100%;
+  padding-bottom: 5rem;
+}
+.text-area::placeholder {
+  opacity: 1;
+  color: #353333;
+  width: 350px;
+  white-space: pre-line;
+}
+
+.btn {
+  padding: 0.8rem 2rem;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  border: none;
+  background-color: #ee8a5d;
+  color: #fff;
+}
+
+.need-presentation {
+  padding-left: 5rem;
+  margin-top: 20rem;
+}
+
+.need {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  color: #292727;
+}
+
+.presentation {
+  display: block;
+}
+
+.description {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 700px) {
+  .container {
+    display: block;
+    height: fit-content;
+    padding: 1rem 0;
+    margin: 0;
+  }
+
+  .need-presentation {
+    margin: 10rem 0;
+    padding-left: 8rem;
+  }
+
+  .form-title {
+    margin: 4.5rem 0;
+    font-size: 4rem;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 820px) {
+  .container {
+    display: block;
+    height: fit-content;
+    padding: 1rem 0;
+    margin: 10rem auto;
+  }
+
+  .need-presentation {
+    margin: 10rem 0;
+    padding-left: 8rem;
+  }
+
+  .form-title {
+    margin: 4.5rem 0;
+    font-size: 4rem;
+    font-weight: bold;
+  }
+}
+@media (max-width: 912px) {
+  .container {
+    display: block;
+    height: fit-content;
+    padding: 5rem 0;
+    margin: 10rem auto;
+  }
+
+  .need-presentation {
+    margin: 20rem 0;
+    padding-left: 8rem;
+  }
+
+  .form-group {
+    margin-bottom: 10rem;
+  }
+
+  .form-title {
+    margin: 4.5rem 0;
+    font-size: 4rem;
+    font-weight: bold;
+  }
+}
