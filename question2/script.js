@@ -15,7 +15,7 @@ for (const [key, { name, price }] of Object.entries(item)) {
   prices.push(price);
 }
 const cheap = Math.min(...prices);
-console.log(`The cheap product is ${cheap}`);
+console.log(`The cheapest product is ${cheap}$`);
 
 // 2) Filter and show the product that will be expensive in the array
 const priceings = [];
@@ -23,18 +23,18 @@ for (const [key, { name, price }] of Object.entries(item)) {
   prices.push(price);
 }
 const expensive = Math.max(...prices);
-console.log(`The expensive product is ${expensive}`);
+console.log(`The most expensive product is ${expensive}$`);
 
 // 3) Calculate the full price of all product combined
 let total = 0;
 for (const { name, price } of item.values()) {
   total += price;
 }
-console.log(`full price: ${total}`);
+console.log(`full price: ${total}$`);
 
 // 4) Calculate the full price of all product combined and remove product that are under the 10 dollar
 let full = 0;
 for (const { name, price } of item.values()) {
   price > 10 ? (full += price) : '';
 }
-console.log(`full price: ${full}`);
+console.log(`full price: ${full}$`);
